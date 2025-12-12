@@ -1,1 +1,7 @@
 node_moduels/
+.env
+.DS_Store
+.vscode/
+dist/
+build/
+EOF
