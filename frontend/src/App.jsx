@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Login from './pages/Login';
+import Dashboard from './pages/Dashboard';
+import { getToken } from './utils/auth';
 
-export default function App(){
-  return (
-    <div>
-      <h1>Task Manager</h1>
-      <p>Frontend skeleton. Set VITE_API_URL in .env to point to backend.</p>
-    </div>
+export default function App() {
+  const [loggedIn, setLoggedIn] = useState(!!getToken());
+
+  return loggedIn ? (
+    <Dashboard />
+  ) : (
+    <Login onLogin={() => setLoggedIn(true)} />
   );
 }

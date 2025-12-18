@@ -1,0 +1,1 @@
+postgresql://task_manager_db_zrih_user:IobcWmKy64Zjbcp4snXNZv9De0XH5wXr@dpg-d5187if5r7bs73fii1ng-a.oregon-postgres.render.com/task_manager_db_zrih
